@@ -13,6 +13,8 @@ _**This project is no longer maintained**_
 - [x] Reducing rational/complex numbers, and polynomials to lowest terms
 - [x] Graphing polynomial output, along with first and second order derivations
 
+![Screenshot](.github/graphing-calculator-screenshot.png)
+
 ## How to build 
 
 From terminal, invoke:
