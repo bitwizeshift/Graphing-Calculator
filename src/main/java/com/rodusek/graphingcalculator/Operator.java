@@ -10,7 +10,7 @@ import java.util.Map;
  * <code>+ - / * % ^ ( )</code>. Given a pair of values this operator can be
  * applied to these values.
  * 
- * @author Matthew Rodusek, 120184140, rodu4140@mylaurier.ca
+ * @author Matthew Rodusek
  * @version 1.0, 2013-11-27
  */
 public class Operator {

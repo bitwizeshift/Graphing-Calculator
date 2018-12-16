@@ -7,7 +7,7 @@ package com.rodusek.graphingcalculator;
  * <p>This exception prints default error messages based upon the value of the
  * error passed from the <code>Flags</code> parameter.</p>
  * 
- * @author Matthew Rodusek, 120184140, rodu4140@mylaurier.ca
+ * @author Matthew Rodusek
  * @version 1.0, 2013-10-29
  * @see Operator
  */

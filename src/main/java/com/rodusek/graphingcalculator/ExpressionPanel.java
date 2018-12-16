@@ -20,7 +20,7 @@ import javax.swing.text.DocumentFilter;
 /**
  * Constructs the JPanel for the Expression Frame. It initializes the JTextField with a preset function and range
  * 
- * @author Matthew Rodusek, 120184140, rodu4140@mylaurier.ca
+ * @author Matthew Rodusek
  * @version 1.0, 2013-11-27
  */
 @SuppressWarnings("serial")

@@ -13,8 +13,8 @@ import java.util.StringTokenizer;
  * There are constructors that take variable numbers of <code>Rational</code> objects, an integer and an array, 
  * or a string parsing one that can take polynomial written in regular mathematical notation.
  * 
- * @author Matthew Rodusek, 120184140, rodu4140@mylaurier.ca
- * @version 2.0, 2013-10-29
+ * @author Matthew Rodusek
+ * @version 1.0, 2013-10-29
  * @since 1.0
  */
 public class Poly implements Arithmetic<Poly> {

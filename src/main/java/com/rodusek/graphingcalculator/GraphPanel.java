@@ -15,7 +15,7 @@ import javax.swing.JComponent;
  * Graphs values on a Cartesian plane based on input from the ExpressionPanel being passed
  * through a persistent CalculatorModel.
  * 
- * @author Matthew Rodusek, 120184140, rodu4140@mylaurier.ca
+ * @author Matthew Rodusek
  * @version 1.0, 2013-11-27
  */
 @SuppressWarnings("serial")

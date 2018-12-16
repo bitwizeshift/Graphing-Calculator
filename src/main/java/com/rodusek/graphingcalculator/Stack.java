@@ -7,7 +7,7 @@ import java.util.EmptyStackException;
  * The usual push and pop operations are provided, as well as a method to <code>peek</code> at the top item on the stack, and a method to test for whether the stack <code>is empty</code>.
  * <p>When a stack is first created, it contains no items.</p>
  * 
- * @author Matthew Rodusek, 120184140, rodu4140@mylaurier.ca
+ * @author Matthew Rodusek
  * @version 1.0, 09/09/13
  * @since 1.0
  * @see rodu4140.Node

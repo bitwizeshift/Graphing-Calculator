@@ -10,7 +10,7 @@ import java.beans.PropertyChangeSupport;
  * <p>This is where the bulk of the calculations are done for the y-axis values, as well as determining
  * the maximum values.</p>
  * 
- * @author Matthew Rodusek, 120184140, rodu4140@mylaurier.ca
+ * @author Matthew Rodusek
  * @version 1.0, 2013-11-27
  */
 public class CalculatorModel {

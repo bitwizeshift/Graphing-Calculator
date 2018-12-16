@@ -9,7 +9,7 @@ import java.util.StringTokenizer;
  * <p>The class also contains static constants for commonly used Complex values (1, 0, -1)</p>
  * <p>All real and imaginary coefficients use the <code>Rational</code> library</p>
  * 
- * @author Matthew Rodusek, 120184140, rodu4140@mylaurier.ca
+ * @author Matthew Rodusek
  * @version 1.0, 2013-11-27
  * @see Rational
  */

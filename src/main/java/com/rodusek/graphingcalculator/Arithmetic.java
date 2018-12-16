@@ -4,8 +4,8 @@ package com.rodusek.graphingcalculator;
  * The Arithmetic interface contains all the basic mathematical operations required to be included in
  * arithmetic classes.
  * 
- * @author Matthew Rodusek, 120184140
- * @version 2.0, 2013-11-27
+ * @author Matthew Rodusek
+ * @version 1.0, 2013-11-27
  */
 public interface Arithmetic<E>{
 	

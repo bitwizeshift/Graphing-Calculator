@@ -10,7 +10,7 @@ import java.util.ArrayList;
  * <p>As of version 1.3, there is now a max() and min() function that supports a series of array
  * inputs</p>
  * 
- * @author Matthew Rodusek, 120184140, rodu4140@mylaurier.ca
+ * @author Matthew Rodusek
  * @version 1.3, 11/25/13
  * @since 1.0
  */

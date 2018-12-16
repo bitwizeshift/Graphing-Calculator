@@ -11,7 +11,7 @@ import java.util.StringTokenizer;
  * <p>The class also contains static constants for commonly used Rational values (1/1, 0/1, -1/0)</p>
  * <p>As of version 2.0, it supports BigInteger values so that the rational can be any size</p>
  * 
- * @author Matthew Rodusek, 120184140, rodu4140@mylaurier.ca
+ * @author Matthew Rodusek
  * @version 2.5, 2013-11-27
  * @since 1.0
  *

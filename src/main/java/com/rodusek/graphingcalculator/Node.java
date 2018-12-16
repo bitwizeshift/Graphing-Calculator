@@ -4,7 +4,7 @@ package com.rodusek.graphingcalculator;
  * The <code>Node</code> class contains only two pieces of data; a value, and the next <code>Node</code> in the list
  * <p>It can be constructed empty, or with data depending on requirements</p>
  * 
- * @author Matthew Rodusek, 120184140, rodu4140@mylaurier.ca
+ * @author Matthew Rodusek
  * @version 1.0, 09/09/13
  * @since 1.0
  */

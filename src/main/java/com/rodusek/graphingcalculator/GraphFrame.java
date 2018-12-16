@@ -18,7 +18,7 @@ import javax.swing.SwingUtilities;
  * Creates the Frame for the GraphPanel.
  * <p>This class is mainly used to initializes the JMenu</p>
  * 
- * @author Matthew Rodusek, 120184140, rodu4140@mylaurier.ca
+ * @author Matthew Rodusek
  * @version 1.0, 2013-11-27
  */
 @SuppressWarnings("serial")
