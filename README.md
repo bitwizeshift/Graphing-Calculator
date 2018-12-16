@@ -3,6 +3,10 @@
 A graphing calculator project which was designed as part of a university 
 assignment.
 
+This project was implemented during second-year University. The design
+of this does not necessarily reflect the quality of decisions that 
+would be made if this were to be done again from scratch.
+
 _**This project is no longer maintained**_
 
 ## Features
