@@ -1,4 +1,4 @@
-package rodu4140;
+package com.rodusek.graphingcalculator;
 
 import java.awt.BorderLayout;
 import java.awt.Color;

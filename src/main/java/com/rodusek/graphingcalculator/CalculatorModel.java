@@ -1,4 +1,4 @@
-package rodu4140;
+package com.rodusek.graphingcalculator;
 
 import java.beans.PropertyChangeListener;
 import java.beans.PropertyChangeSupport;

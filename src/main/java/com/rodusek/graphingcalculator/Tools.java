@@ -1,4 +1,4 @@
-package rodu4140;
+package com.rodusek.graphingcalculator;
 
 import java.util.ArrayList;
 

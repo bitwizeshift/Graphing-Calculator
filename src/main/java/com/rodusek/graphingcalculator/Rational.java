@@ -1,10 +1,9 @@
-package rodu4140;
+package com.rodusek.graphingcalculator;
 import java.math.BigDecimal;
 import java.math.BigInteger;
 import java.math.RoundingMode;
 import java.util.StringTokenizer;
 
-import rodu4140.Arithmetic;
 /**
  * The <code>Rational</code> class represents fractional numbers in the form of a/b, where a and b are both integers.
  * The basic algebra operations are added, as well as a comparison operator to test whether two <code>Rational</code>s are identical.

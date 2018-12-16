@@ -1,4 +1,4 @@
-package rodu4140;
+package com.rodusek.graphingcalculator;
 /**
  * The <code>ComplexException</code> class handles all exceptions dealing with
  * incorrect use of Complex class, including using invalid parameters on method calls.

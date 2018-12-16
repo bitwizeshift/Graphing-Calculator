@@ -1,4 +1,4 @@
-package rodu4140;
+package com.rodusek.graphingcalculator;
 
 /**
  * The <code>Node</code> class contains only two pieces of data; a value, and the next <code>Node</code> in the list

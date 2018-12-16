@@ -1,4 +1,4 @@
-package rodu4140;
+package com.rodusek.graphingcalculator;
 /**
  * The <code>OperatorException</code> class handles all exceptions dealing with
  * incorrect use of operators, including wrong operators or missing operators

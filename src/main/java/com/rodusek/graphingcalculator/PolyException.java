@@ -1,4 +1,4 @@
-package rodu4140;
+package com.rodusek.graphingcalculator;
 /**
  * The <code>PolyException</code> class handles all exceptions dealing with
  * incorrect use of Poly class, including using invalid parameters on method calls.

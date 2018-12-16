@@ -1,4 +1,4 @@
-package rodu4140;
+package com.rodusek.graphingcalculator;
 
 /**
  * The <code>RationalException</code> class handles all exceptions dealing with

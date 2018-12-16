@@ -1,4 +1,4 @@
-package rodu4140;
+package com.rodusek.graphingcalculator;
 
 /**
  * The Arithmetic interface contains all the basic mathematical operations required to be included in
