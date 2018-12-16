@@ -14,42 +14,42 @@ import java.util.Map;
  * @version 1.0, 2013-11-27
  */
 public class Operator {
-	
-	private final String symbol;
-	private final int 	 precedence;
-	
-	private final static Map<String, Integer> precedents;
-	static {
-		Map<String, Integer> map = new Hashtable<String, Integer>();
-		map.put("(", new Integer(0));
-		map.put(")", new Integer(0));
-		map.put("+", new Integer(1));
-		map.put("-", new Integer(1));
-		map.put("*", new Integer(2));
-		map.put("/", new Integer(2));
-		map.put("%", new Integer(2));
-		map.put("^", new Integer(3));
-		
-		precedents = Collections.unmodifiableMap(map);
-	}
-	
-	// ---------------------------------------------------------------
-	
-	/**
-	 * Initializes the <code>Operator</code> with a string representing
-	 * op.
-	 * @param op the string representing the operator
-	 * @throws OperatorException If the string is not an <code>Operator</code>
-	 */
-	public Operator(String op){
-		if(!isOperator(op))throw new OperatorException(OperatorException.Flags.NOT_AN_OPERATOR);
-		this.symbol = op;
-		this.precedence = precedents.get(op);
-	}
-	
-	// ---------------------------------------------------------------
-	
-	/**
+    
+    private final String symbol;
+    private final int      precedence;
+    
+    private final static Map<String, Integer> precedents;
+    static {
+        Map<String, Integer> map = new Hashtable<String, Integer>();
+        map.put("(", new Integer(0));
+        map.put(")", new Integer(0));
+        map.put("+", new Integer(1));
+        map.put("-", new Integer(1));
+        map.put("*", new Integer(2));
+        map.put("/", new Integer(2));
+        map.put("%", new Integer(2));
+        map.put("^", new Integer(3));
+        
+        precedents = Collections.unmodifiableMap(map);
+    }
+    
+    // ---------------------------------------------------------------
+    
+    /**
+     * Initializes the <code>Operator</code> with a string representing
+     * op.
+     * @param op the string representing the operator
+     * @throws OperatorException If the string is not an <code>Operator</code>
+     */
+    public Operator(String op){
+        if(!isOperator(op))throw new OperatorException(OperatorException.Flags.NOT_AN_OPERATOR);
+        this.symbol = op;
+        this.precedence = precedents.get(op);
+    }
+    
+    // ---------------------------------------------------------------
+    
+    /**
      * Applies a binary operator to two <code>Arithmetic</code> parameters.
      * 
      * @param p the first <code>Arithmetic</code> for the binary operator
@@ -58,23 +58,23 @@ public class Operator {
      * @throws OperatorException if a left parenthesis is found, or if the operator is invalid
      */
     @SuppressWarnings({"rawtypes", "unchecked"})
-	public Arithmetic perform(final Arithmetic p, final Arithmetic q) throws OperatorException {
-		Arithmetic result = null;
-	
-		switch(this.symbol) {
-			case "+": result = (Arithmetic) p.add(q); break;
-			case "-": result = (Arithmetic) p.sub(q); break;
-			case "/": result = (Arithmetic) p.div(q); break;
-			case "*": result = (Arithmetic) p.mul(q); break;
-			case "%": result = (Arithmetic) p.mod(q); break;
-			case "^": result = (Arithmetic) p.exp(q); break;
-			case "(": throw new OperatorException(OperatorException.Flags.NO_RIGHT_PARENTHESIS); 
-			default:  throw new OperatorException(OperatorException.Flags.CANNOT_PERFORM);
-		}
-		
-		return result;
+    public Arithmetic perform(final Arithmetic p, final Arithmetic q) throws OperatorException {
+        Arithmetic result = null;
+    
+        switch(this.symbol) {
+            case "+": result = (Arithmetic) p.add(q); break;
+            case "-": result = (Arithmetic) p.sub(q); break;
+            case "/": result = (Arithmetic) p.div(q); break;
+            case "*": result = (Arithmetic) p.mul(q); break;
+            case "%": result = (Arithmetic) p.mod(q); break;
+            case "^": result = (Arithmetic) p.exp(q); break;
+            case "(": throw new OperatorException(OperatorException.Flags.NO_RIGHT_PARENTHESIS); 
+            default:  throw new OperatorException(OperatorException.Flags.CANNOT_PERFORM);
+        }
+        
+        return result;
     }
-	
+    
     /**
      * Determines whether or not the input string is an operator.
      * 
@@ -83,9 +83,9 @@ public class Operator {
      *         <code>false</code> otherwise.
      */
     public static boolean isOperator(final String s) {
-    	return precedents.containsKey(s);
+        return precedents.containsKey(s);
     }
-	
+    
     /**
      * Returns whether the current operator precedes another operator.
      * 
@@ -94,7 +94,7 @@ public class Operator {
      *         operator, <code>false</code> otherwise.
      */
     public boolean precedes(final Operator operator) {
-    	return this.precedence <= operator.precedence;
+        return this.precedence <= operator.precedence;
     }
     
     // ---------------------------------------------------------------
@@ -104,15 +104,15 @@ public class Operator {
      * symbolic values.
      * 
      * @return <code>true</code> if the symbols are the same
-     * 		   <code>false</code> otherwise.
+     *            <code>false</code> otherwise.
      */
     @Override
     public boolean equals(Object other) {
-    	if(other.getClass()!=this.getClass()) return false;
-    	else {
-    		Operator otherOp = (Operator) other;
-    		return this.symbol.equals(otherOp.symbol);
-    	}
+        if(other.getClass()!=this.getClass()) return false;
+        else {
+            Operator otherOp = (Operator) other;
+            return this.symbol.equals(otherOp.symbol);
+        }
     }
     
     /*
@@ -122,7 +122,7 @@ public class Operator {
      */
     @Override
     public String toString() {
-    	return this.symbol;
+        return this.symbol;
     }
-	
+    
 }

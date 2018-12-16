@@ -13,38 +13,38 @@ package com.rodusek.graphingcalculator;
  */
 @SuppressWarnings("serial")
 public class OperatorException extends RuntimeException {
-	
-	/**
+    
+    /**
      * The enumerated error flags and matching strings.
      */
     public static enum Flags {
-		DIVISION_BY_ZERO("Cannot perform division by zero."), 
-		NOT_AN_OPERATOR("Not an operator."), 
-		CANNOT_PERFORM("Cannot execute this operator."), 
-		NO_RIGHT_PARENTHESIS("Missing right parenthesis."),
-		NO_LEFT_PARENTHESIS("Missing left parenthesis");
-	
-		private final String message;
-	
-		// Constructor assigns message strings to flags.
-		Flags(String message) {
-		    this.message = message;
-		}
-	
-		// Returns the message string that matches the current error flag.
-		public String getMessage() {
-		    return this.message;
-		}
+        DIVISION_BY_ZERO("Cannot perform division by zero."), 
+        NOT_AN_OPERATOR("Not an operator."), 
+        CANNOT_PERFORM("Cannot execute this operator."), 
+        NO_RIGHT_PARENTHESIS("Missing right parenthesis."),
+        NO_LEFT_PARENTHESIS("Missing left parenthesis");
+    
+        private final String message;
+    
+        // Constructor assigns message strings to flags.
+        Flags(String message) {
+            this.message = message;
+        }
+    
+        // Returns the message string that matches the current error flag.
+        public String getMessage() {
+            return this.message;
+        }
     }
-	
+    
     // ---------------------------------------------------------------
         
-	/**
+    /**
      * Constructs the error from the specified flag
      * @param flag <code>Flags</code> constant signaling specific exception.
      */
-	public OperatorException(Flags flag) {
-		super(flag.getMessage());
-	}
+    public OperatorException(Flags flag) {
+        super(flag.getMessage());
+    }
 
 }

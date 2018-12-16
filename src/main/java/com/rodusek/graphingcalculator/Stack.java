@@ -13,64 +13,64 @@ import java.util.EmptyStackException;
  * @see rodu4140.Node
  */
 public class Stack<E> {
-	
-	private Node<E> top;
-	
-	/**
-	 * Creates an empty Stack.
-	 * 
-	 * <p><b>Usage:</b></p>
-	 * <code>Stack s = new Stack();</code></br></br>
-	 * @see rodu4140.Node
-	 */
-	public Stack(){
-		this.top = null;
-	}
-	
-	// ---------------------------------------------------------------------------------
-	
-	/**
-	 * Removes the object at the top of this stack and returns that object as the value of this function.
-	 * 
-	 * @return The object at the top of this stack
-	 * @throws EmptyStackException if this stack is empty
-	 */
-	public synchronized E pop() throws EmptyStackException{
-		if(this.top==null) throw new EmptyStackException();
-		E value = this.top.getElement();
-		this.top = this.top.getNext();
-		return value;
-	}
-	
-	/**
-	 * Looks at the object at the top of this stack without removing it from the stack.
-	 * 
-	 * @return the object at the top of this stack
-	 * @throws EmptyStackException if this stack is empty
-	 */
-	public synchronized E peek() throws EmptyStackException{
-		if(this.top==null) throw new EmptyStackException();
-		E value = this.top.getElement();
-		return value;			
-	}
-	
-	/**
-	 * Pushes an item onto the top of this stack.
-	 * 
-	 * @param element the item to be pushed onto this stack.
-	 */
-	public synchronized void push(E element){
-		this.top = new Node<E>(element, this.top);
-	}
-	
-	// ---------------------------------------------------------------------------------
-	
-	/**
-	 * Tests if the stack is empty.
-	 * 
-	 * @return <code>true</code> if and only if the stack is empty, <code>false</code> otherwise
-	 */
-	public boolean isEmpty(){
-		return this.top==null;
-	}
+    
+    private Node<E> top;
+    
+    /**
+     * Creates an empty Stack.
+     * 
+     * <p><b>Usage:</b></p>
+     * <code>Stack s = new Stack();</code></br></br>
+     * @see rodu4140.Node
+     */
+    public Stack(){
+        this.top = null;
+    }
+    
+    // ---------------------------------------------------------------------------------
+    
+    /**
+     * Removes the object at the top of this stack and returns that object as the value of this function.
+     * 
+     * @return The object at the top of this stack
+     * @throws EmptyStackException if this stack is empty
+     */
+    public synchronized E pop() throws EmptyStackException{
+        if(this.top==null) throw new EmptyStackException();
+        E value = this.top.getElement();
+        this.top = this.top.getNext();
+        return value;
+    }
+    
+    /**
+     * Looks at the object at the top of this stack without removing it from the stack.
+     * 
+     * @return the object at the top of this stack
+     * @throws EmptyStackException if this stack is empty
+     */
+    public synchronized E peek() throws EmptyStackException{
+        if(this.top==null) throw new EmptyStackException();
+        E value = this.top.getElement();
+        return value;            
+    }
+    
+    /**
+     * Pushes an item onto the top of this stack.
+     * 
+     * @param element the item to be pushed onto this stack.
+     */
+    public synchronized void push(E element){
+        this.top = new Node<E>(element, this.top);
+    }
+    
+    // ---------------------------------------------------------------------------------
+    
+    /**
+     * Tests if the stack is empty.
+     * 
+     * @return <code>true</code> if and only if the stack is empty, <code>false</code> otherwise
+     */
+    public boolean isEmpty(){
+        return this.top==null;
+    }
 }

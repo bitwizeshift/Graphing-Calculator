@@ -14,36 +14,36 @@ package com.rodusek.graphingcalculator;
 @SuppressWarnings("serial")
 public class RationalException extends RuntimeException{
     
-	/**
+    /**
      * The enumerated error flags and matching strings.
      */
-	public enum Flags{
-		DIVISION_BY_ZERO("Denominator can't be zero."),
-		INVALID_EXPONENT("Exponent must be integer value."),
-		BAD_INPUT("Rational input can't be parsed.");
-		
-		private final String message;
-		
-		// Constructor assigns message strings to flags.
-		Flags(String message) {
-		    this.message = message;
-		}
-	
-		// Returns the message string that matches the current error flag.
-		public String getMessage() {
-		    return this.message;
-		}
-		
-		
-	}
+    public enum Flags{
+        DIVISION_BY_ZERO("Denominator can't be zero."),
+        INVALID_EXPONENT("Exponent must be integer value."),
+        BAD_INPUT("Rational input can't be parsed.");
+        
+        private final String message;
+        
+        // Constructor assigns message strings to flags.
+        Flags(String message) {
+            this.message = message;
+        }
+    
+        // Returns the message string that matches the current error flag.
+        public String getMessage() {
+            return this.message;
+        }
+        
+        
+    }
 
     // ---------------------------------------------------------------
-	
-	/**
+    
+    /**
      * Constructs the error from the specified flag
      * @param flag <code>Flags</code> constant signaling specific exception.
      */
-	public RationalException(Flags flag) {
-		super(flag.getMessage());
-	}
+    public RationalException(Flags flag) {
+        super(flag.getMessage());
+    }
 }
