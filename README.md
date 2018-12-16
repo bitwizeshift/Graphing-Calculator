@@ -22,11 +22,11 @@ _**This project is no longer maintained**_
 ## How to build 
 
 From terminal, invoke:
-```bash
+```sh
 ./gradlew build
 ```
 for posix, or 
-```bash
+```sh
 gradlew.bat build
 ```
 from windows 
@@ -35,9 +35,15 @@ The resulting binary will be in `build/libs/Graphing-Calculator-<version>.jar`
 
 ## How to run
 
-Same as any java jar, just run `java -jar <jarname>`, e.g.:
+If the jar is already built, it can be executed the same as any java jar,  
+by running `java -jar <jarname>`, e.g.:
 ```sh
 java -jar build/libs/Graphing-Calculator-<version>.jar
+```
+
+Alternatively, the project can be both built and run in one command of:
+```sh
+./gradlew run # 'gradlew.bat run' on windows
 ```
 
 ## License
